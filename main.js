@@ -19,13 +19,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
-        path: 'home',
-        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_home_home_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./home/home.module */ 3467)).then(m => m.HomePageModule)
-    },
-    {
         path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_home_home_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./home/home.module */ 3467)).then(m => m.HomePageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {
