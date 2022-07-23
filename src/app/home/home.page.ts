@@ -2,7 +2,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Component, OnInit } from "@angular/core";
 import { Clipboard } from "@capacitor/clipboard";
-import { Toast } from '@capacitor/toast';
+import { Toast } from "@capacitor/toast";
 
 @Component({
   selector: "app-home",
@@ -46,11 +46,11 @@ export class HomePage implements OnInit {
       // eslint-disable-next-line id-blacklist
       string: text
     });
-    this.showToast('copied')
+    this.showToast("copied");
   }
-  async showToast(message){
+  async showToast(message) {
     await Toast.show({
-      text: message,
+      text: message
     });
-  };
+  }
 }

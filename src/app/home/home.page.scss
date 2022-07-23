@@ -1,3 +1,8 @@
+@media only screen and (max-width: 768px) {
+  .colorscontainer {
+    flex-direction: column;
+  }
+}
 .colorscontainer {
   height: 100vh;
   width: 100vw;
@@ -24,5 +29,18 @@ ion-fab {
   bottom: 50px;
   ion-fab-button {
     --background: white;
+    --color: red;
+    height: 40px;
+    width: 110px;
+    --border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    span {
+      padding-left: 6px;
+      background: -webkit-linear-gradient(#772eff, #9b19ab);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
   }
 }

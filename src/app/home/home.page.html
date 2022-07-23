@@ -6,13 +6,15 @@
       [ngStyle]="{'background': 'rgb('+clrSec.rgb[0]+','+clrSec.rgb[1]+','+clrSec.rgb[2]+')'}"
     >
       <div class="clrDetails">
-        <span [innerText]="clrSec.hex" (click)="writeToClipboard(clrSec.hex)"> </span>
+        <span [innerText]="clrSec.hex" (click)="writeToClipboard(clrSec.hex)">
+        </span>
       </div>
     </div>
   </div>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="getColors()">
-      <ion-icon src="assets/shuffle.svg"></ion-icon>
+      <ion-icon name="shuffle"></ion-icon>
+      <span> Generate </span>
     </ion-fab-button>
   </ion-fab>
 </ion-content>
