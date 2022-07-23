@@ -40,7 +40,7 @@ jobs:
     - name: Force push to destination branch
       uses: ad-m/github-push-action@v0.5.0
       with:
-        github_token: ${{ COLORMIND_GH_PAGES }}
+        github_token: ${{ secrets.COLORMIND_GH_PAGES }}
         branch: gh-pages
         force: true
         directory: ./dist
