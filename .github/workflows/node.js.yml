@@ -43,4 +43,3 @@ jobs:
         github_token: ${{ secrets.COLORMIND_GH_PAGES }}
         branch: gh-pages
         force: true
-        directory: ./www
