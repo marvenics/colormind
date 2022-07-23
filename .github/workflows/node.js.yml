@@ -8,7 +8,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+permissions:
+  contents: write
 jobs:
   build:
 
@@ -41,4 +42,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: www
-        token: ${{ secrets.COLORMIND_GH_PAGES }}
+          
+        
