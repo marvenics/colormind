@@ -1,0 +1,7 @@
+{
+  "name": "colormind",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

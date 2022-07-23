@@ -1,0 +1,28 @@
+.colorscontainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  .colorSec {
+    height: 100vh;
+    cursor: pointer;
+    width: 100%;
+    .clrDetails {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-weight: 900;
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
+  }
+}
+ion-fab {
+  right: 50px;
+  bottom: 50px;
+  ion-fab-button {
+    --background: white;
+  }
+}
